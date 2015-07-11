@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Error!</title>
+</head>
+<body>
+</body>
+<script>
+    var remote = require('remote');
+    var util = remote.require('util');
+    var Event = remote.getGlobal('event');
+    var Windows = remote.getGlobal('windows');
+
+    Event.on('error', function(type, dat){
+        document.write(type);
+        document.write(util.inspect(dat));
+        Windows['error'].showWindow();
+        Windows['error'].focus();
+    });
+</script>
+</html>

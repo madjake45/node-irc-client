@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Loading...</title>
+    <style>
+        body {
+            -webkit-user-select: none;
+            -webkit-app-region: no-drag;
+            background: lightgray;
+        }
+        .title{
+            -webkit-app-region: no-drag;
+            padding-top: 20px;
+            text-align: center;
+        }
+        .text{
+            -webkit-app-region: no-drag;
+            text-align: center;
+            padding-top: 30px;
+        }
+        .loader {
+            -webkit-app-region: no-drag;
+            padding-top: 10px;
+            width: 100%;
+            height: 5px;
+            background: white;
+            display: block;
+            border-radius: 15px;
+        }
+        .loader_text {
+            -webkit-app-region: no-drag;
+            padding-top: 10px;
+            text-align: center;
+        }
+    </style>
+    <script src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<h2 class="title">Node-IRC-Client</h2>
+<h3 class="text">Loading...</h3>
+<div>
+    <span class="loader"></span>
+    <span class="loader_text"></span>
+</div>
+</body>
+</html>
